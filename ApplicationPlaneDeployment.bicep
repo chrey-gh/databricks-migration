@@ -1,5 +1,5 @@
 @description('The URI of script file to upload blob container')
-param fileuploaduri string = 'https://raw.githubusercontent.com/DatabricksFactory/databricks-migration/main/ApplicationPlaneDeployment.ps1'
+param fileuploaduri string = 'https://raw.githubusercontent.com/chrey-gh/databricks-migration/main/ApplicationPlaneDeployment.ps1'
 
 @description('Name of identity')
 param identityName string = 'PostDeploymentScriptuserAssignedName'

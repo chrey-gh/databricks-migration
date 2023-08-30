@@ -85,3 +85,9 @@ $BODY = @"
 
 $ASSIGNWSURI = "https://$WORKSPACEURL/api/2.1/unity-catalog/workspaces/$WORKSPACEID/metastore"
 $RESPONSE = Invoke-RestMethod -Method PUT -Uri $ASSIGNWSURI -Headers $HEADERS -Body $BODY
+write-host "finished"
+
+
+# 20230830 - storage account needs to be created with metastore in name
+# if not done so script fails silently with incomplete configuration of the metastore
+# also the uami needs to have storage blob data contributor role on the storage account

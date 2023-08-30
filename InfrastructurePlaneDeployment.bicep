@@ -12,8 +12,7 @@ param containerName string = 'data'
 param eHRuleName string = 'rule'
 
 @description('The URI of script file to upload blob container')
-param fileuploaduri string = 'https://raw.githubusercontent.com/DatabricksFactory/databricks-migration/main/InfrastructurePlaneDeployment.ps1'
-
+param fileuploaduri string = 'https://raw.githubusercontent.com/chrey-gh/databricks-migration/main/InfrastructurePlaneDeployment.ps1'
 @description('Name of identity')
 param identityName string = 'PostDeploymentScriptuserAssignedName'
 
@@ -82,7 +81,7 @@ param nsgName string = 'databricks-nsg'
 param pricingTier string = 'premium'
 
 @description('CIDR range for the private subnet.')
-param privateSubnetCidr string = '10.179.0.0/18'
+param privateSubnetCidr string = '10.188.0.0/18'
 
 @description('The name of the private subnet to create.')
 param privateSubnetName string = 'private-subnet'
@@ -95,10 +94,10 @@ param privateSubnetName string = 'private-subnet'
 param publicNetworkAccess string = 'Enabled'
 
 @description('CIDR range for the public subnet.')
-param publicSubnetCidr string = '10.179.64.0/18'
+param publicSubnetCidr string = '10.188.64.0/18'
 
 @description('CIDR range for the private endpoint subnet..')
-param privateEndpointSubnetCidr string = '10.179.128.0/24'
+param privateEndpointSubnetCidr string = '10.188.128.0/24'
 
 @description('The name of the public subnet to create.')
 param publicSubnetName string = 'public-subnet'
@@ -111,7 +110,7 @@ param publicSubnetName string = 'public-subnet'
 param requiredNsgRules string = 'NoAzureDatabricksRules'
 
 @description('CIDR range for the vnet.')
-param vnetCidr string = '10.179.0.0/16'
+param vnetCidr string = '10.188.0.0/16'
 
 @description('The name of the virtual network to create.')
 param vnetName string = 'databricks-vnet'
